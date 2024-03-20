@@ -1,15 +1,13 @@
 
 import './App.css'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 
   return (
-    <>
-     
-      <h1 className='text-4xl text-blue-700'>Axios , Rechat and Awesome Components</h1>
-    
-      
-    </>
+    <div>
+      <Navbar></Navbar>
+    </div>
   )
 }
 

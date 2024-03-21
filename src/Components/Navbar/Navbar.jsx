@@ -15,8 +15,9 @@ const Navbar = () => {
         { id: 1, path: '/service', name: 'Service' },
         { id: 1, path: '/contact', name: 'Contact' }
     ]
+    // lg:w-80% lg:max-w-[1300px] lg:mx-auto mt-[50px]
     return (
-        <div className="w-90% max-w-[1440px] mx-auto mt-[50px]">
+        <div className="">
 
             {/* DaisyUI Navbar */}
             {/* <div className="navbar bg-base-100">
@@ -77,11 +78,15 @@ const Navbar = () => {
             </nav> */}
 
             {/* slowly down or up */}
-            <nav className={`lg:flex md:flex absolute duration-1000 ${open ? 'top-[70px]' : '-top-[250px]'} bg-slate-200 w-[150px] lg:w-full md:w-full p-4 my-4 ml-3 md:ml-auto lg:text-center lg:justify-center rounded-xl md:static lg:static`}>
-                {
-                    routes.map(routes => <Link key={routes.id} route={routes}></Link>)
-                }
-            </nav>
+            <div className="flex justify-between">
+                {/* <button className="font-extrabold text-xl">PDP Gym</button> */}
+                <nav className={`lg:flex md:flex absolute duration-1000 ${open ? 'top-[70px]' : '-top-[250px]'} bg-slate-200  w-[150px] lg:w-full md:w-full p-4 my-4 ml-3 md:ml-auto lg:text-center lg:justify-center rounded-xl md:static lg:static`}>
+                    {
+                        routes.map(routes => <Link key={routes.id} route={routes}></Link>)
+                    }
+                </nav>
+
+            </div>
 
         </div>
     );

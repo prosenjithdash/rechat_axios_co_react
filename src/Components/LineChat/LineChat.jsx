@@ -6,8 +6,7 @@ const LineChat = () => {
             "name": "Alice",
             "math_mark": 85,
             "physics_mark": 78,
-            "biology_mark": 92
-        },
+            "biology_mark": 92 },
         {
             "name": "Bob",
             "math_mark": 78,

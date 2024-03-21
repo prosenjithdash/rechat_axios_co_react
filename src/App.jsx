@@ -3,6 +3,7 @@ import './App.css'
 import LineChat from './Components/LineChat/LineChat'
 import Navbar from './Components/Navbar/Navbar'
 import PriceOptions from './Components/Navbar/PriceOptions/PriceOptions'
+import PhonesFetch from './Components/PhonesFetch/PhonesFetch'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Navbar></Navbar>
       <PriceOptions></PriceOptions>
       <LineChat></LineChat>
+      <PhonesFetch></PhonesFetch>
     </div>
   )
 }
